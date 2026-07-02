@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@layer themes {
+  :root {
+    --custom-bg: var(--color-slate-50);
+    --custom-hover: var(--color-slate-200);
+    --custom-active: var(--color-slate-200);
+    --custom-border: var(--color-gray-600);
+    --custom-input-bg: var(--color-slate-200);
+  }
+
+  .dark {
+    --custom-bg: var(--color-slate-950);
+    --custom-hover: color-mix(in srgb, var(--color-blue-950) 70%, transparent);
+    --custom-active: color-mix(in srgb, var(--color-blue-950) 70%, transparent);
+    --custom-border: var(--color-gray-600);
+    --custom-input-bg: var(--color-slate-800);
+  }
+}
+
+body,
+html,
+nav,
+header,
+footer,
+aside,
+main,
+article,
+div:has(button#headlessui-listbox-button-_R_3efqlb_),
+#headlessui-listbox-options-_R_lndqlb_,
+.nextra-mobile-nav,
+.nextra-navbar,
+.nextra-search-results {
+  background-color: var(--custom-bg);
+}
+
+#headlessui-listbox-button-_R_3efqlb_:hover,
+#headlessui-listbox-button-_R_dndqlb_:hover {
+  background-color: var(--custom-hover);
+}
+
+#headlessui-combobox-input-_R_bddqlb_,
+#headlessui-combobox-input-_R_2rajqlb_ {
+  background-color: var(--custom-input-bg);
+}
+
+ul > li.active {
+  background-color: var(--custom-active);
+}
+
+.nextra-border,
+.nextra-navbar {
+  border-color: var(--custom-border);
+  border-top-color: var(--custom-border);
+  border-right-color: var(--custom-border);
+  border-bottom-color: var(--custom-border);
+  border-left-color: var(--custom-border);
+}

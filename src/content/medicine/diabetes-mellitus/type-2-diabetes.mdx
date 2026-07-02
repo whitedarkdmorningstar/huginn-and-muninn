@@ -1,0 +1,75 @@
+# Type 2 Diabetes
+
+## Diagnostic Criteria for Diabetes
+
+> In asymptomatic patients, two diagnostic tests are required to confirm diabetes.
+
+1. `Random blood glucose level or Oral glucose tolerance test (OGTT)` ≥ 11.1 mmol/L (200 mg/dL) **OR**
+1. `Fasting blood glucose` ≥ 7 mmol/L (126 mg/dL) **OR**
+1. `HbA1c` ≥ 48 mmol/mol (≥ 6.5%)
+
+- 1 mmol/L = 18 mg/dL
+
+## Management
+
+> Guidelines for glucose-lowering treatment in type 2 diabetes: adapted from ADA-EASD 2020 (American Diabetes Association-European Association for the Study of Diabetes)
+
+> First-line therapy is `metformin` and `comprehensive lifestyle` (including weight management and physical activity).
+
+- Add new glucose-lowering agents if HbA1c is above target
+
+### Indicators of High-risk or Established ASCVD, CKD or HF
+
+1. ASCVD predominates (e.g. history of myocardial infarction)
+   - `GLP-1 RA` (+ `SGLT2i`)
+1. HF or CKD predominates (e.g. reduced ejection fraction, reduced eGFR)
+   - `SGLT2i` (+ `GLP-1 RA`)
+
+### No-Indicators
+
+1. To minimise hypoglycaemia
+   - `DPP-4i` (+ `SGLT2i` (+ `GLP-1 RA`))
+   - `GLP-1 RA` (+ `SGLT2i` (+ `DPP-4i`))
+   - `SGLT2i` (+ `DPP-4i` (+ `GLP-1 RA`))
+   - _Add later generation `SU` or `basal insulin` with lower risk of hypoglycaemia_
+1. To promote weight loss
+   - `GLP-1 RA` with good efficacy for weight loss (+ `SGLT2i`)
+   - `SGLT2i` (+ `GLP-1 RA` with good efficacy for weight loss)
+   - _Add `DPP-4i` (if not on `GLP-1 RA`) before other options (e.g. SU)_
+1. Low cost
+   - `SU` (+ `TZD`)
+   - `TZD` (+ `SU`)
+   - _Insulin therapy (`basal insulin` with lowest cost)_ Or _`DPP-4i` or `SGLT2i` with lowest cost_
+
+## Glucose-Lowering Agents
+
+| Agents                                                                  | Advantages                                                        | Disadvantages                                                                                   | Cost      | Mechanism of Action (MOA)                                                                                  |
+| ----------------------------------------------------------------------- | ----------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- | --------- | ---------------------------------------------------------------------------------------------------------- |
+| **Biguanides** `Metformin`                                              | Weight neutral, ↓ cardiovascular risk.                            | Risk of lactic acidosis[^1], GI side effects, contraindicated in renal dysfunction.             | Very low  | ↓ Hepatic glucose production (gluconeogenesis) and ↑ insulin sensitivity.                                  |
+| **Sulfonylureas** `Glimepiride`, `Glyburide`, `Glipizide`               | Rapid glucose control.                                            | Risk of hypoglycemia, weight gain, β-cell exhaustion with long-term use.                        | Low       | Stimulate insulin secretion from pancreatic β-cells.                                                       |
+| **Thiazolidinediones** `Pioglitazone`, `Rosiglitazone`                  | Durable glycemic effect, improves lipid profile (`pioglitazone`). | Weight gain, edema, risk of heart failure, fracture risk, bladder cancer risk (`pioglitazone`). | Low       | ↑ Insulin sensitivity by activating PPAR-γ[^2] in adipose, muscle, and liver.                              |
+| **GLP-1 Receptor Agonists** `Liraglutide`, `Dulaglutide`, `Semaglutide` | Weight loss, ↓ cardiovascular events.                             | GI side effects (nausea, vomiting), injectable (except oral `semaglutide`).                     | Very high | Mimic GLP-1 → ↑ insulin secretion, ↓ glucagon secretion, slow gastric emptying, and promote satiety.       |
+| **SGLT2 Inhibitors** `Empagliflozin`, `Dapagliflozin`, `Canagliflozin`  | ↓ Weight, blood pressure, and cardiovascular and renal benefits.  | Risk of genital/urinary infections, volume depletion, rare euglycemic DKA[^3].                  | High      | Inhibit renal glucose reabsorption in the proximal tubules → glucosuria.                                   |
+| **DPP-4 Inhibitors** `Sitagliptin`, `Linagliptin`, `Saxagliptin`        | Weight neutral, minimal risk of hypoglycemia.                     | Modest efficacy, risk of pancreatitis.                                                          | Moderate  | Inhibit DPP-4 enzyme → ↑ endogenous GLP-1 levels → ↑ insulin secretion, ↓ glucagon secretion.              |
+| **Basal Insulin** `Glargine`, `Detemir`, `Degludec`                     | Effective in severe hyperglycemia, flexible dosing (`Degludec`).  | Risk of hypoglycemia, weight gain, requires injection.                                          | High      | Provides long-acting insulin coverage → suppresses hepatic glucose production between meals and overnight. |
+
+---
+
+## Types of Insulin
+
+| Type of Insulin         | Examples                                    | Onset                  | Peak                                 | Duration                               |
+| ----------------------- | ------------------------------------------- | ---------------------- | ------------------------------------ | -------------------------------------- |
+| **Rapid-Acting**        | `Lispro`, `Aspart`, `Glulisine`             | 10-20 minutes          | 30-90 minutes                        | 3-5 hours                              |
+| **Short-Acting**        | `Regular insulin`                           | 30-60 minutes          | 2-4 hours                            | 5-8 hours                              |
+| **Intermediate-Acting** | `isophane (NPH)`, `lente`                   | 1-2 hours              | 4-12 hours                           | 12-18 hours                            |
+| **Long-Acting**         | `Glargine`, `Detemir`                       | 1-2 hours (`Glargine`) | None (steady release)                | 24 hours (`Detemir`: up to 20 hours)   |
+| **Ultra-Long-Acting**   | `Degludec`                                  | 1 hour                 | None (steady release)                | >42 hours                              |
+| **Premixed Insulins**   | 70/30 (`NPH/Regular`), 75/25 (`Lispro mix`) | 10-30 minutes          | Dual peaks (depending on components) | Varies by formulation (up to 24 hours) |
+
+---
+
+[^1]: **Lactic acidosis**: A rare but serious metabolic acidosis caused by metformin accumulation, especially in renal impairment.
+
+[^2]: **PPAR-γ**: Peroxisome proliferator-activated receptor gamma, a nuclear receptor that regulates gene expression related to glucose metabolism.
+
+[^3]: **Euglycemic DKA (Diabetic Ketoacidosis)**: A condition with ketoacidosis but near-normal blood glucose levels, linked to SGLT2i.

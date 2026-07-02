@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+/**For <summary><deatils> Components **/
+details > div > div {
+  @apply p-3;
+}
+
+li > ul,
+li > ol {
+  @apply mt-2!;
+}
+
+details {
+  @apply bg-fuchsia-300/25! dark:bg-fuchsia-950/25!;
+}
+
+summary {
+  @apply font-bold text-fuchsia-600 dark:text-fuchsia-600;
+}
+
+code {
+  @apply text-green-700 dark:text-green-600;
+}
+
+del {
+  @apply font-bold text-red-600 no-underline dark:text-red-700;
+}
+
+em {
+  @apply text-yellow-600 underline dark:text-yellow-600;
+}
+
+strong {
+  @apply font-bold text-blue-600 dark:text-blue-700;
+}
+
+thead {
+  @apply bg-blue-700 font-bold text-white dark:bg-blue-950 dark:text-neutral-100!;
+}
+
+tr {
+  @apply even:bg-blue-300/25! even:dark:bg-blue-950/25!;
+}

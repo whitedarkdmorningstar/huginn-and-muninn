@@ -1,0 +1,355 @@
+# Breast Cancer
+
+## Staging
+
+<details>
+<summary>Breast cancer staging is based on the TNM system (Tumor, Node, Metastasis), developed by the American Joint Committee on Cancer (AJCC).</summary>
+
+### Step 1: Determine T (Tumor Size & Extent)
+
+| T Stage | Description                                                               |
+| ------- | ------------------------------------------------------------------------- |
+| **Tis** | Carcinoma in situ (DCIS, LCIS, Paget's disease without tumor)             |
+| **T1**  | Tumor ≤ 20 mm (subdivided as: T1a ≤ 5 mm, T1b = 5-10 mm, T1c = 10-20 mm)  |
+| **T2**  | Tumor > 20 mm but ≤ 50 mm                                                 |
+| **T3**  | Tumor > 50 mm                                                             |
+| **T4**  | Tumor extends to chest wall or skin (includes inflammatory breast cancer) |
+
+### Step 2: Determine N (Lymph Node Involvement)
+
+| N Stage | Description                                                                                  |
+| ------- | -------------------------------------------------------------------------------------------- |
+| **N0**  | No regional lymph node involvement                                                           |
+| **N1**  | Metastasis in 1-3 axillary lymph nodes                                                       |
+| **N2**  | Metastasis in 4-9 axillary lymph nodes                                                       |
+| **N3**  | Metastasis in ≥10 axillary nodes or involvement of internal mammary or supraclavicular nodes |
+
+### Step 3: Determine M (Distant Metastasis)
+
+| M Stage | Description                                                 |
+| ------- | ----------------------------------------------------------- |
+| **M0**  | No distant metastasis                                       |
+| **M1**  | Distant metastasis present (e.g., bone, liver, lung, brain) |
+
+### Assign the Clinical Stage (0 - IV) Based on TNM
+
+| Stage    | T (Tumor) | N (Nodes) | M (Metastasis) |
+| -------- | --------- | --------- | -------------- |
+| **0**    | Tis       | N0        | M0             |
+| **I**    | T1        | N0        | M0             |
+| **IIA**  | T0-T1     | N1        | M0             |
+| **IIA**  | T2        | N0        | M0             |
+| **IIB**  | T2        | N1        | M0             |
+| **IIB**  | T3        | N0        | M0             |
+| **IIIA** | T0-T3     | N2        | M0             |
+| **IIIA** | T3        | N1        | M0             |
+| **IIIB** | T4        | Any N     | M0             |
+| **IIIC** | Any T     | N3        | M0             |
+| **IV**   | Any T     | Any N     | M1             |
+
+</details>
+
+## Early Breast Cancer
+
+> Breast cancer that is localized and has not spread beyond the breast or nearby lymph nodes.
+
+1. **Stage 0**: `Tis N0 M0` (Ductal Carcinoma In Situ - DCIS)
+1. **Stage I**: `T1 N0 M0` (Small tumor, no nodes involved)
+1. **Stage II (some cases)**: `T0-T2 N0-N1 M0` (Limited lymph node involvement)
+
+Prognosis: High cure rate with surgery + adjuvant therapy.
+
+## Advanced Breast Cancer
+
+> Breast cancer that has spread extensively either locally or to distant sites.
+
+1. **Locally advanced breast cancer (LABC)**: `T3-T4` or `N2-N3 M0`
+1. **Metastatic breast cancer (MBC)**: `Any T, Any N, M1` (Distant spread to liver, bone, lungs, brain)
+
+Prognosis: Incurable in metastatic cases, but treatment can prolong survival and improve quality of life.
+
+## Triple Assessment
+
+### 1. Clinical Examination
+
+#### History
+
+- **Symptoms**:
+  - Breast lump (painless, hard, irregular)
+  - Nipple discharge (bloody, serous, or purulent)
+  - Skin changes (peau d'orange, ulceration, erythema)
+  - Nipple inversion or retraction
+  - Breast pain (usually late or in inflammatory cancer)
+  - Axillary swelling (lymphadenopathy)
+- **Risk Factors**:
+  - Family history of breast cancer (BRCA1/BRCA2 mutations)
+  - Early menarche, late menopause, nulliparity
+  - Hormone replacement therapy (HRT), oral contraceptives
+  - Prior history of radiation to the chest
+  - Obesity, alcohol consumption
+
+#### Physical Examination
+
+- **Inspection** (compare both breasts):
+  - Skin changes (redness, thickening, ulceration)
+  - Nipple abnormalities (inversion, deviation, discharge)
+  - Visible lumps or retraction
+  - Peau de orange (orange peel appearance due to lymphatic blockage)
+- **Palpation**:
+  - **Lump characteristics**:
+    - Hard, irregular, fixed → suggests malignancy
+    - Mobile, well-defined, soft → suggests benign (e.g., fibroadenoma)
+  - **Nipple discharge assessment**:
+    - Single duct, bloody → suspicious for malignancy
+    - Multiple ducts, milky → hormonal or benign
+  - **Axillary, supraclavicular, or infraclavicular lymph nodes**:
+    - Hard, fixed, matted nodes → suggest malignancy
+  - **Bimanual palpation & comparison with contralateral breast**
+
+### 2. Imaging
+
+import { Tabs } from "nextra/components";
+
+<Tabs items={["Simple", "Details"]}>
+<Tabs.Tab>
+
+1. Mammography:
+   - Irregular, spiculated mass
+   - Microcalcifications (clustered, irregular)
+   - Architectural distortion
+   - Asymmetry in density
+1. Ultrasound:
+   - Hypoechoic, irregular mass
+   - Spiculated borders
+   - Posterior acoustic shadowing
+   - Enlarged abnormal lymph nodes
+1. MRI
+   - Irregular, enhancing mass with washout kinetics
+
+</Tabs.Tab>
+<Tabs.Tab>
+
+#### 2.1 Mammography (X-ray of the breast)
+
+- **First-line imaging for women >40 years**
+- **Findings suspicious for malignancy**:
+  - Irregular, spiculated mass
+  - Microcalcifications (clustered, irregular)
+  - Architectural distortion
+  - Asymmetry in density
+
+<details>
+<summary>BI-RADS (Breast Imaging Reporting and Data System) Classification</summary>
+
+| BI-RADS Category | Interpretation                  | Management                      |
+| ---------------- | ------------------------------- | ------------------------------- |
+| 0                | Incomplete                      | Additional imaging needed       |
+| 1                | Normal                          | Routine screening               |
+| 2                | Benign                          | Routine follow-up               |
+| 3                | Probably benign                 | Short-term follow-up (6 months) |
+| 4                | Suspicious                      | Biopsy needed                   |
+| 5                | Highly suggestive of malignancy | Biopsy needed                   |
+| 6                | Known malignancy                | Treatment planned               |
+
+</details>
+
+#### 2.2 Ultrasound (USG Breast)
+
+- **First-line for women < 40 years** (dense breasts)
+- **Differentiates cystic vs. solid lesions**
+- **Findings suggestive of malignancy**:
+  - Hypoechoic, irregular mass
+  - Spiculated borders
+  - Posterior acoustic shadowing
+  - Enlarged abnormal lymph nodes
+
+#### 2.3 Magnetic Resonance Imaging (MRI)
+
+- **Indications**:
+  - High-risk patients (BRCA mutation, strong family history)
+  - Preoperative staging for multifocal/multicentric disease
+  - Assessment of response to neoadjuvant chemotherapy
+  - Suspected recurrence after surgery
+- **Findings suggestive of malignancy**:
+  - Irregular, enhancing mass with washout kinetics
+
+</Tabs.Tab>
+</Tabs>
+
+### 3. Pathology (Biopsy & Cytology)
+
+<Tabs items={["Simple", "Details"]}>
+<Tabs.Tab>
+
+1. Fine Needle Aspiration Biopsy (FNAC)
+1. Core Needle Biopsy (CNB)
+1. Excisional Biopsy
+1. Histopathological Analysis
+
+</Tabs.Tab>
+<Tabs.Tab>
+
+#### 3.1 Fine-Needle Aspiration Cytology (FNAC)
+
+- **Indications**:
+  - Easily palpable lumps
+  - Evaluating axillary lymph nodes
+- **Advantages**:
+  - Quick, minimally invasive
+  - High sensitivity for detecting malignancy
+- **Limitations**:
+  - Cannot differentiate in situ vs. invasive carcinoma
+  - May yield insufficient material
+
+#### 3.2 Core Needle Biopsy (CNB)
+
+- **Gold standard for histological diagnosis**
+- **Indications**:
+  - Any BI-RADS 4 or 5 lesion
+  - FNAC inconclusive or discordant with imaging
+  - Differentiating invasive vs. in situ carcinoma
+- **Advantages**:
+  - Preserves tissue architecture for receptor testing (ER, PR, HER2)
+- **Limitations**:
+  - More invasive than FNAC
+  - Risk of bleeding or infection
+
+#### 3.3 Excisional Biopsy
+
+- **Indications**:
+  - FNAC/core biopsy inconclusive
+  - Suspicious lesion < 1 cm (complete removal preferred)
+  - Recurrent breast lesion with previous negative biopsy
+- **Types**:
+  - **Wire-guided excision**: If lesion is non-palpable
+  - **Sentinel lymph node biopsy (SLNB)**: For early breast cancer staging
+
+#### 3.4 Histopathological Analysis
+
+- **Grading (Nottingham system)**:
+  - **Grade 1 (Well-differentiated)** → Slow-growing
+  - **Grade 2 (Moderately differentiated)**
+  - **Grade 3 (Poorly differentiated)** → Aggressive tumor
+- **Receptor Status Testing**:
+  - **Estrogen receptor (ER) & Progesterone receptor (PR)** → Guides hormone therapy
+  - **HER2/neu status** → Determines need for targeted therapy (e.g., trastuzumab)
+  - **Ki-67 index** → Measures proliferation rate
+
+</Tabs.Tab>
+</Tabs>
+
+---
+
+### Summary of Triple Assessment
+
+| Step                        | Components                           | Key Findings in Malignancy                                                      |
+| --------------------------- | ------------------------------------ | ------------------------------------------------------------------------------- |
+| **1. Clinical Examination** | History & physical exam              | Hard, irregular lump, fixed, peau d'orange, nipple retraction, bloody discharge |
+| **2. Imaging**              | Mammography, Ultrasound, MRI         | Spiculated mass, microcalcifications, hypoechoic lesion, posterior shadowing    |
+| **3. Pathology**            | FNAC, Core biopsy, Excisional biopsy | Atypical cells, ductal carcinoma, receptor status                               |
+
+---
+
+## Management of Early Breast Cancer (EBC)
+
+> Curative treatment with surgery ± Adjuvant therapy
+
+### Surgical Management
+
+#### 1. Breast-Conserving Surgery (BCS)
+
+> Lumpectomy + Radiation Therapy
+
+- **Indications**:
+  - Tumor < 5 cm (T1-T2)
+  - Single lesion or multifocal lesions in the same quadrant
+  - No contraindication to radiation therapy
+- **Procedure**:
+  - Wide local excision (removal of tumor with negative margins)
+  - Sentinel lymph node biopsy (SLNB) ± axillary lymph node dissection (ALND)
+  - Postoperative whole-breast radiation therapy to prevent recurrence
+- **Contraindications**:
+  - Multifocal or multicentric tumors in different quadrants
+  - Large tumor-to-breast ratio
+  - Prior radiation to the breast
+  - Pregnancy (if radiation is needed)
+
+#### 2. Mastectomy (Total Removal of Breast Tissue)
+
+- **Types**:
+  1. **Simple (Total) Mastectomy** → Removes the entire breast but spares axillary nodes.
+  2. **Modified Radical Mastectomy (MRM)** → Removes the entire breast + axillary lymph nodes.
+  3. **Skin-Sparing Mastectomy (SSM)** → Preserves the skin envelope for immediate reconstruction.
+  4. **Nipple-Sparing Mastectomy (NSM)** → Preserves skin + nipple-areolar complex (select cases).
+- **Indications**:
+  - Large tumor (>5 cm) or diffuse microcalcifications
+  - Multicentric or recurrent tumors
+  - Patient preference for mastectomy over BCS
+  - Contraindications to radiation therapy
+- **Axillary Surgery with Mastectomy**:
+  - **Sentinel Lymph Node Biopsy (SLNB)** → If clinically node-negative
+  - **Axillary Lymph Node Dissection (ALND)** → If node-positive or large tumors
+- **Reconstruction Options** (Done immediately or delayed):
+  - Autologous tissue reconstruction (e.g., TRAM flap, DIEP flap)
+  - Implant-based reconstruction
+
+### Adjuvant Therapy (Post-Surgical)
+
+- **Radiation Therapy (RT)**:
+  - Given after BCS or in high-risk mastectomy cases (T3, node-positive).
+- **Hormonal Therapy** (for ER+/PR+ tumors):
+  - Tamoxifen (pre-menopausal) or Aromatase Inhibitors (post-menopausal).
+- **Chemotherapy**:
+  - Indicated in **high-risk patients** (e.g., node-positive, HER2+).
+- **Targeted Therapy**:
+  - Trastuzumab for HER2+ tumors.
+
+---
+
+## Management of Advanced Breast Cancer (ABC)
+
+> Improve survival and palliate symptoms (in MBC)
+
+### 1. Locally Advanced Breast Cancer (LABC) (T3-T4, N2-N3, M0)
+
+- **Primary Treatment**:
+
+  - **Neoadjuvant chemotherapy (NAC)** → Shrinks tumor before surgery.
+  - **Modified Radical Mastectomy (MRM)** → Standard surgery after NAC.
+  - **Postoperative Radiation Therapy** → To control local recurrence.
+  - **Adjuvant Hormonal & Targeted Therapy** (as per receptor status).
+
+- **Surgical Details in LABC**:
+  - **Modified Radical Mastectomy (MRM) is preferred** over BCS.
+  - **Axillary Lymph Node Dissection (ALND) is mandatory** if nodes are clinically positive.
+  - If **NAC response is good**, some cases may become eligible for BCS.
+
+### 2. Metastatic Breast Cancer (MBC) (Stage IV, Any T, Any N, M1)
+
+> Palliative treatment, NOT curative
+
+- **Systemic Therapy** is the mainstay:
+
+  - Hormonal therapy (if ER+/PR+)
+  - Chemotherapy (if triple-negative or aggressive disease)
+  - Targeted therapy (HER2+ → Trastuzumab, Pertuzumab)
+
+- **Surgical Role in MBC**:
+
+  - **Palliative Mastectomy** → Only for ulcerated, bleeding, or infected tumors.
+  - **Palliative ALND** → If axillary disease is painful or causing lymphedema.
+
+- **Radiotherapy & Bone-directed Therapy**:
+  - Used for **brain metastases, painful bone metastases, or spinal cord compression**.
+  - **Bisphosphonates or Denosumab** given for bone metastases.
+
+---
+
+### Summary of Surgical Management of Breast Cancer
+
+| Cancer Type                                | Preferred Surgery                             | Axillary Surgery                | Additional Notes                   |
+| ------------------------------------------ | --------------------------------------------- | ------------------------------- | ---------------------------------- |
+| **DCIS (Tis N0 M0)**                       | Breast-Conserving Surgery (BCS) or Mastectomy | SLNB if high-risk               | No radiation if mastectomy is done |
+| **Early Breast Cancer (T1-T2, N0-N1, M0)** | BCS + Radiation or Mastectomy                 | SLNB ± ALND if node-positive    | Adjuvant chemo if high-risk        |
+| **Locally Advanced Breast Cancer (LABC)**  | MRM (Rarely BCS after NAC)                    | ALND is required                | Neoadjuvant chemo before surgery   |
+| **Metastatic Breast Cancer (MBC)**         | Palliative Mastectomy (only for symptoms)     | ALND if severe axillary disease | Mainly systemic therapy            |
