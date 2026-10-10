@@ -4,8 +4,14 @@ export default function HomePage() {
   return (
     <div className="p-4">
       <Cards>
-        <Card title={"Infectious Disease"} href={"/docs/infectious-disease"} />
-        <Card title={"Acute Medicine"} href={"/docs/acute-medicine"} />
+        <Card
+          title={"Infectious Disease"}
+          href={"/docs/infectious-disease/clinical-examination"}
+        />
+        <Card
+          title={"Acute Medicine"}
+          href={"/docs/acute-medicine/clinical-examination"}
+        />
       </Cards>
     </div>
   );
