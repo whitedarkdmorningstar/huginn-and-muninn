@@ -1,8 +1,4 @@
-import { HTMLAttributes } from "react";
-
-interface CodeProps extends HTMLAttributes<HTMLPreElement> {}
-
-export default function Code(props: CodeProps) {
+export default function Code(props: any) {
   return (
     <code
       className={

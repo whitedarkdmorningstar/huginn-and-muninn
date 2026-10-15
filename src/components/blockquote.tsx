@@ -1,14 +1,10 @@
 import { cn } from "@/lib/cn";
-import React from "react";
+import React, { BlockquoteHTMLAttributes, DetailedHTMLProps } from "react";
 
 // Types
 
 export type CalloutType =
-  | "default"
-  | "error"
-  | "info"
-  | "warning"
-  | "important";
+  "default" | "error" | "info" | "warning" | "important";
 
 // Functions
 
@@ -51,11 +47,7 @@ const getBlockquoteStatus = (children: React.ReactNode): CalloutType => {
 
 // Component
 
-export default function Blockquote({
-  children,
-  className,
-  ...props
-}: React.ComponentProps<"div">) {
+export default function Blockquote({ children, className, ...props }: any) {
   const calloutType: CalloutType = getBlockquoteStatus(children);
 
   return (
