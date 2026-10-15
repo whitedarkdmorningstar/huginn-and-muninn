@@ -56,8 +56,6 @@ export default function Blockquote({
   className,
   ...props
 }: React.ComponentProps<"div">) {
-  if (!children) return null;
-
   const calloutType: CalloutType = getBlockquoteStatus(children);
 
   return (
