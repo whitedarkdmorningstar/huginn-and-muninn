@@ -9,6 +9,6 @@
     "prettier-plugin-tailwindcss",
     "prettier-plugin-organize-imports"
   ],
-  "tailwindStylesheet": "src/app/globals.css",
+  "tailwindStylesheet": "src/app/global.css",
   "tailwindFunctions": ["cn", "cva"]
 }

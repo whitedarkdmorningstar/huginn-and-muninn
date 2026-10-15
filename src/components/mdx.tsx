@@ -4,7 +4,6 @@ import Blockquote from "./blockquote";
 import Code from "./code";
 import Del from "./del";
 import Bold from "./bold";
-import { BlockquoteHTMLAttributes, Component, DetailedHTMLProps } from "react";
 
 export function getMDXComponents(components?: MDXComponents) {
   return {
