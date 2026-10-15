@@ -5,12 +5,22 @@ export default function HomePage() {
     <div className="p-4">
       <Cards>
         <Card
-          title={"Infectious Disease"}
-          href={"/docs/infectious-disease/clinical-examination"}
+          title={"Medicine"}
+          href={"/docs/v1/medicine/cardiology/acute-coronary-syndrome"}
         />
         <Card
           title={"Acute Medicine"}
-          href={"/docs/acute-medicine/clinical-examination"}
+          href={"/docs/v2/acute-medicine/clinical-examination"}
+        />
+      </Cards>
+      <Cards>
+        <Card
+          title={"Infectious Disease"}
+          href={"/docs/v2/infectious-disease/clinical-examination"}
+        />
+        <Card
+          title={"Acute Medicine"}
+          href={"/docs/v2/acute-medicine/clinical-examination"}
         />
       </Cards>
     </div>

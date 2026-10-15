@@ -1,0 +1,11 @@
+{
+  "pages": [
+    "heart-failure",
+    "coronary-artery-disease",
+    "acute-coronary-syndrome",
+    "angina-pectoris",
+    "atrial-fibrillation",
+    "hypertension",
+    "murmurs"
+  ]
+}

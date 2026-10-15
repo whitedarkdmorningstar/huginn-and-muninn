@@ -1,4 +1,5 @@
 {
   "editor.wordWrap": "on",
-  "editor.wordWrapColumn": 65
+  "editor.wordWrapColumn": 65,
+  "editor.aiStats.enabled": true
 }
