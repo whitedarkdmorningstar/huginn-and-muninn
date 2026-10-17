@@ -1,3 +1,9 @@
 {
-  "pages": ["cardiology", "respiration", "diabetes-mellitus"]
+  "pages": [
+    "cardiology",
+    "respiration",
+    "diabetes-mellitus",
+    "infection",
+    "nephrology"
+  ]
 }
