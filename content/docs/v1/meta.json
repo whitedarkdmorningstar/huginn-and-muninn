@@ -1,4 +1,5 @@
 {
   "title": "1.0.0",
-  "root": "version"
+  "root": "version",
+  "pages": ["medicine", "surgery", "paediatrics", "ob-gyn", "pharmacology"]
 }

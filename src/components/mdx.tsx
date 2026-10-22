@@ -1,18 +1,13 @@
 import defaultMdxComponents from "fumadocs-ui/mdx";
 import type { MDXComponents } from "mdx/types";
 import Blockquote from "./blockquote";
-import Code from "./code";
-import Del from "./del";
-import Bold from "./bold";
+import Img from "./img";
 
 export function getMDXComponents(components?: MDXComponents) {
   return {
     ...defaultMdxComponents,
     blockquote: Blockquote,
-    code: Code,
-    del: Del,
-    bold: Bold,
-    strong: Bold,
+    img: Img,
     ...components,
   } satisfies MDXComponents;
 }

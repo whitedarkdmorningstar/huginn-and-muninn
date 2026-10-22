@@ -17,11 +17,11 @@ div.blockquote > p {
 }
 
 details {
-  @apply border border-cyan-600 dark:border-cyan-500 rounded-md overflow-hidden mb-4 bg-cyan-100 dark:bg-cyan-800/20;
+  @apply mb-4 overflow-hidden rounded-md border border-cyan-600 bg-cyan-100 dark:border-cyan-500 dark:bg-cyan-800/20;
 }
 
 summary {
-  @apply p-2 bg-cyan-200 dark:bg-cyan-800/30 cursor-pointer text-cyan-600 dark:text-cyan-500 flex flex-row justify-between items-center gap-2;
+  @apply flex cursor-pointer flex-row items-center justify-between gap-2 bg-cyan-200 p-2 text-cyan-600 dark:bg-cyan-800/30 dark:text-cyan-500;
 }
 
 details > :not(summary) {
@@ -47,4 +47,22 @@ details > summary {
 /* Removes the arrow in Safari */
 details > summary::-webkit-details-marker {
   display: none;
+}
+
+code {
+  @apply me-0.5 rounded-sm bg-slate-100 px-1 py-0.5 text-base text-green-600 dark:bg-slate-800 dark:text-green-500;
+}
+
+strong,
+b {
+  @apply font-normal text-blue-700 dark:text-blue-600;
+}
+
+del {
+  @apply text-red-600 no-underline dark:text-red-500;
+}
+
+i,
+em {
+  @apply text-yellow-700 dark:text-yellow-600;
 }

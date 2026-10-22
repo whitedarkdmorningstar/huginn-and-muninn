@@ -4,6 +4,12 @@
     "respiration",
     "diabetes-mellitus",
     "infection",
-    "nephrology"
+    "nephrology",
+    "rheumatology",
+    "hepatology",
+    "neurology",
+    "haematology",
+    "endocrinology",
+    "toxicology"
   ]
 }

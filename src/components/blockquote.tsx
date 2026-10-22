@@ -55,7 +55,7 @@ export default function Blockquote({ children, className, ...props }: any) {
       className={cn(
         "blockquote my-4 overflow-x-auto rounded-lg border p-2 font-normal transition-colors [&>p]:m-0",
         // Color themes matching Nextra blockquote/callout style (Light / Dark)
-        (calloutType === "info" || calloutType === "default") &&
+        calloutType === "info" &&
           "border-blue-700 text-blue-700 bg-blue-100/50 dark:bg-blue-800/20 dark:text-blue-600 dark:border-blue-600",
         calloutType === "error" &&
           "border-red-700 text-red-700 bg-red-100/50 dark:bg-red-800/20 dark:text-red-600 dark:border-red-600",
@@ -63,7 +63,8 @@ export default function Blockquote({ children, className, ...props }: any) {
           "border-yellow-600 text-yellow-600 bg-yellow-100/50 dark:bg-yellow-700/20",
         calloutType === "important" &&
           "border-purple-700 text-purple-700 bg-purple-100/50 dark:bg-purple-800/20 dark:text-purple-600 dark:border-purple-600",
-
+        calloutType === "default" &&
+          "border-green-700 text-green-700 bg-green-100/50 dark:bg-green-800/20 dark:text-green-600 dark:border-green-600",
         className,
       )}
       {...props}
