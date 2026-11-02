@@ -1,3 +1,9 @@
 {
-  "pages": ["respiratory", "rheumatology-and-bone-disease"]
+  "pages": [
+    "cardiology",
+    "respiratory",
+    "infectious-disease",
+    "neurology",
+    "rheumatology-and-bone-disease"
+  ]
 }

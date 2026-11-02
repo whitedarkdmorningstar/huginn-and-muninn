@@ -29,7 +29,7 @@ export default function HomePage() {
         <Cards>
           <Card
             title={"Medicine"}
-            href={"/docs/v2/medicine/rheumatology-and-bone-disease/gout"}
+            href={"/docs/v2/medicine/cardiology/hypertension"}
           />
         </Cards>
       </div>
