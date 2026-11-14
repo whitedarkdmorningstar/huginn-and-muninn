@@ -1,0 +1,201 @@
+# Shock
+
+> Shock is a clinical condition characterized by failue to adequately perfuse and oxygenate vital organs.
+
+## Clinical Signs
+
+> ↑ HR, ↑ RR, ↓ BP, ↓ UO, altered mental status
+
+1. **Hypotension**: Systolic blood pressure \< 90 mmHg or mean arterial pressure \< 65 mmHg
+1. **Tachycardia**: Heart rate \> 100 bpm
+1. **Altered consciousness and/or fainting**:
+   - Poor peripheral pefusion
+   - Cool peripheies
+   - Clammy/sweaty skin
+   - Pallor
+   - Reduced capillary return (CRT \> 2 seconds)
+   - Warm peripheries in the early phase of distributive shock (e.g. sepsis)
+1. **Oliguria**: Urine output \< 0.5 mL/kg/hr (\< 50 mL/hr in adults)
+1. **Tachypnea**: Respiratory rate \> 20 breaths/min
+
+## Classification
+
+1. Pump failure
+   1. **Cardiogenic Shock**
+      - Due to pump failure of the heart.
+      - Causes: `Myocardial infarction`, `myocarditis`, `arrhythmias`, `valvular disease`.
+   1. **Obstructive Shock**
+      - Due to obstruction in the circulation.
+      - Causes: `Pulmonary embolism`, `cardiac tamponade`, `tension pneumothorax`.
+1. Peripheral circulatory failure
+   1. **Hypovolemic Shock**
+      - Due to decreased intravascular volume.
+      - Causes: `Haemorrhage` (trauma, GI bleeding), `dehydration` (vomiting, diarrhea, burns).
+   1. **Distributive Shock**
+      - Due to vasodilation and maldistribution of blood.
+      - Causes:
+      - `Septic Shock`: Infection leading to systemic inflammatory response.
+      - `Anaphylactic Shock`: Severe allergic reaction.
+      - `Neurogenic Shock`: Spinal cord injury disrupting autonomic control.
+   1. **Endocrine Shock**
+      - Due to severe endocrine dysfunction leading to circulatory collapse.
+      - Examples:
+      - `Adrenal Crisis` (Acute Adrenal Insufficiency) → Lack of cortisol → Hypotension, hypoglycemia, electrolyte imbalance.
+      - `Myxedema Coma` (Severe hypothyroidism) → Hypothermia, bradycardia, hypotension.
+      - `Thyroid Storm` (Severe hyperthyroidism) → Tachycardia, high-output heart failure.
+   1. **Iatrogenic**
+      - `Drugs` (e.g. `antihypertensives`, `diuretics`, `sedatives`)
+
+## Management
+
+### General Management
+
+1. Assessemnt and resuscitation simultaneouly
+1. **ABC** (Airway, Breathing, Circulation) are priorities
+1. High flow **oxygen** by mask
+1. Adequate **IV access** and take blood samples (`FBC`, `Glucose`)
+1. Monitor **vital signs** (BP, PR, RR, SpO2, temperature)
+1. Monitor **ECG** and chest X-ray
+1. **Urinary catheter** for urine output monitoring
+1. Control any external bleeding by applying pressure to the wound
+1. `IV crystalloids 0.9% saline infusion (20 mL/kg)` as a bolus for shock associated with hypovolemia or distributive shock. Repeat bolus if necessary.
+1. Look for and treat specifically the causes of shock
+
+### Specific Management
+
+import { Tabs, Tab } from "fumadocs-ui/components/tabs";
+
+<Tabs items={["anaphylactic", "septic", "cardiogenic", "hypovolemic"]}>
+
+<Tab>
+
+#### Anaphylactic Shock
+
+1. Stop further administration of suspected agents (e.g. drugs, contrast media, blood products)
+1. Give 100% oxygen
+1. Open and maintain airway:
+   - If upper airway oedema is present, consider emergency intubation or surgical airway (e.g. cricothyroidotomy)
+1. Give `IM adrenaline 0.5 mg` (1:1000) into the anterolateral aspect of the thigh, repeat after 5 min if no improvement
+1. In profound shock or immediately life-threatening situations such as cardiac arrest, follow cardiac arrest guidelines
+1. `IV fluids` (e.g. `0.9% saline`) 1-2 L to maintain blood pressure if hypotension persists after adrenaline
+1. `H1 blockers` (e.g. `chlorphenamine 10-20 mg slow IV`)
+1. `H2 blockers` (e.g. `ranitidine 50 mg IV`)
+1. `IV corticosteroids` (e.g. `hydrocortisone 200 mg IV`) to prevent biphasic or protracted reactions
+1. Admit/observe for at least 4-6 hours after all symptoms have settled
+
+</Tab>
+
+<Tab>
+
+### Septic Shock
+
+#### Classification
+
+1. Systemic Inflammatory Response Syndrome (SIRS)
+   - 2 or more of the following:
+     1. Temperature \> 38°C or \< 36°C
+     1. Heart rate \> 90 bpm
+     1. Respiratory rate \> 20 breaths/min or PaCO₂ \< 32 mmHg
+     1. WBC count \> 12,000/mm³ or \< 4,000/mm³ or \> 10% bands
+1. Sepsis
+   - SIRS + A confirmed or suspected infection
+1. Severe Sepsis
+   - Sepsis + Organ dysfunction, hypoperfusion, or hypotension (SBP \< 90 mmHg) or Lactate \> 4 mmol/L
+1. Septic Shock
+   - Sepsis + Persistent hypotension despite adequate fluid resuscitation
+
+#### Management [#septic]
+
+1. Initial fluid resuscitation of `20 ml/kg of 0.9% normal saline`
+1. Look for the obvious source of infection
+1. Give `IV antibiotics`:
+   - `IV ceftriaxone` for meingococcal sepsis
+   - Consider combination therapy if no obvious source (e.g. `Amoxicillin/clavulanic acid` + `Gentamycin` + `Metronidazole`)
+1. `Inotrope` support:
+   - `IV infusion Noradrenaline 0.5-20 mcg/min`
+1. Early referal to the hospital with the higher-level hospital
+
+</Tab>
+
+<Tab>
+
+### Cardiogenic Shock
+
+#### Clinical Features
+
+1. Hypotension (SBP \< 90 mmHg)
+1. Tachycardia (HR \> 100 bpm)
+1. Cool, clammy skin
+1. Oliguria (UO \< 0.5 mL/kg/hr)
+1. Pulmonary congestion (dyspnea, orthopnea, rales)
+1. Altered mental status (confusion, agitation, lethargy)
+1. Signs of low cardiac output (weak peripheral pulses, narrow pulse pressure)
+1. Left ventricular dysfunction (e.g. S3 gallop, displaced apical impulse)
+1. Jugular venous distension (JVD) and peripheral edema (in right-sided heart failure)
+1. ECG changes: Arrhythmias, ST-segment changes, Q waves
+1. Chest X-ray: Pulmonary edema, cardiomegaly, pleural effusions
+
+#### Management [#cardiogenic]
+
+1. IV access for mild hypotension without pulmonary congestion, a small fluid challenge 250-500 ml may be considered
+1. Consider `inotrope` support:
+   - `IV infusion Dobutamine 2.5-20 mcg/kg/min`
+   - `IV infusion Dopamine 2.5-20 mcg/kg/min`
+   - `IV infusion Noradrenaline 0.5-20 mcg/min` if hypotension persists
+1. Do not give `beta-blockers` or `calcium channel blockers` in acute cardiogenic shock
+
+</Tab>
+
+<Tab>
+
+### Hypovolemic Shock
+
+#### Causes of Intravascular Volume Loss
+
+1. **Haemorrhage**:
+   1. Thorax
+      - Lung injury
+      - Aortic injury
+      - Massive haemoptysis
+   1. Abdomen/Pelvis/Retroperitoneum
+      - Solid organ injury (e.g. liver, spleen)
+      - Vascular injury (e.g. trauma, ruptured aneurysm)
+      - GI haemorrhage (e.g. peptic ulcer, varices)
+      - Gynaecological (e.g. ectopic pregnancy, postpartum haemorrhage)
+   1. Orthopaedic
+      - Pelvic fracture
+      - Long bone fracture
+   1. Extrimity and skin surface
+      - Lacerations
+      - Amputations
+1. **Non-haemorrhagic**:
+   - Gastrointestinal losses (vomiting, diarrhea)
+   - Renal losses (diuretics, osmotic diuresis)
+   - Skin losses (burns, excessive sweating)
+   - Third-space losses (ascites, peritonitis)
+
+#### Clinical Features [#hypovolemic]
+
+#### Management [#hypovolemic]
+
+1. Airway: Intubate and ventilate if necessary
+1. Breathing:
+   - Give high-flow oxygen by mask 10-15 L/min
+   - Quickly treat immediately life-threatening injuries (e.g. tension pneumothorax, flail chest, massive haemothorax, foreign body in the airway)
+1. Vascular access
+   - 2 or more IV access with large bore cannula
+   - Blood G&M, RBS, Pulse oximetry, BP, CRT, ECG moinitoring
+   - Identify source of fluid loss
+1. Fluid resuscitation
+   - `Isotonic crystaloid solution`: initial bolus 1-2 L NS → Reassess → Give second bolus 1-2 L
+   - Control external blood loss by applying pressure packing or suturing
+   - If haemodynamic status is not stablilized after the second bolus, the blood loss \> 15-20% of total blood volume **or** ongoing blood loss **or** both
+1. Blood transfusion
+   - `Trauma patient` still in `shock` with `minimal haemodynamic improvement` after `2-3 L of crystalloid infusion` needs a blood transfusion
+   - When possilbe, type and cross-matched blood is preferable, otherwise type **O** Rh-negative blood
+   - `Whole blood` or `Packed RBC`
+1. Correct the cause of shock
+
+</Tab>
+
+</Tabs>
